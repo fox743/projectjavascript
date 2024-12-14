@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+
+</head>
+<body>
+    <h1>Menim Maasimi hesablayn</h1>
+    <h2 id="maasim"></h2>
+
+    <script>
+       let maas = +prompt('Maasiniz Qeyd Edin Zehmet Olmasa') 
+       let vergi = +prompt('Ne Qeder Vergi Tutulur?')
+
+       let netice = maas - (maas*vergi/100)
+
+       document.getElementById('maasim').innerHTML = netice
+    </script>
+</body>
+</html>
